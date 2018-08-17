@@ -85,7 +85,7 @@ export default () => (
           </div>
           <p>Size:</p>
           <div>
-            <p>5 - 8 OZ</p>
+            <p>5 - 8 oz</p>
             <p>8 - 10 oz</p>
             <p>10 - 12 oz</p>
           </div>

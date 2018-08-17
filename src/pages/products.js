@@ -287,7 +287,7 @@ export default () => (
           <p />
           <p>Monk Fish</p>
           <p />
-          <p>Skae Wing</p>
+          <p>Skate Wing</p>
           <p />
           <p>Lobster</p>
           <p />

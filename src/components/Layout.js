@@ -5,6 +5,7 @@ import Header from "./header";
 import Footer from "./footer";
 import styled from "styled-components";
 import bglarge from "../images/bglarge.jpg";
+import favicon from "../images/fav.jpg";
 
 import "normalize.css";
 import "./styles.css";
@@ -33,6 +34,7 @@ const Layout = ({ children }) => (
         content="Seaboard Seafood Inc. serving the finest fish Atlantic Canada has to offer."
       />
       <meta charSet="utf-8" />
+      <link rel="icon" type="image/png" href={favicon} />
     </Helmet>
     <Header />
     <ImageBg>{children}</ImageBg>

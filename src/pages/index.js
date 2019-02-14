@@ -88,6 +88,7 @@ export default ({ data }) => {
     crab4,
     crab5,
     crab6,
+    crab7,
     capelin1,
     capelin2,
     capelin3,
@@ -97,12 +98,24 @@ export default ({ data }) => {
     lobster3,
     lobster4,
     lobster5,
+    lobster6,
     squid1,
     squid2,
     squid3,
     squid4,
     squid5,
-    squid6
+    squid6,
+    whelk1,
+    whelk2,
+    whelk3,
+    whelk4,
+    sole1,
+    sole2,
+    sole3,
+    sole4,
+    herring1,
+    herring2,
+    herring3
   } = data;
   return (
     <Layout>
@@ -143,7 +156,9 @@ export default ({ data }) => {
                 <p>10 - 12 oz</p>
               </div>
             </ProductContent>
-            <ProductImages imgs={[crab1, crab2, crab3, crab4, crab5, crab6]} />
+            <ProductImages
+              imgs={[crab1, crab2, crab3, crab4, crab5, crab6, crab7]}
+            />
           </ProductDiv>
           <ProductDiv>
             <ProductHeader>
@@ -175,7 +190,14 @@ export default ({ data }) => {
               </div>
             </ProductContent>
             <ProductImages
-              imgs={[lobster1, lobster2, lobster3, lobster4, lobster5]}
+              imgs={[
+                lobster1,
+                lobster2,
+                lobster3,
+                lobster4,
+                lobster5,
+                lobster6
+              ]}
             />
           </ProductDiv>
           <ProductDiv>
@@ -237,6 +259,34 @@ export default ({ data }) => {
             <ProductImages
               imgs={[squid1, squid2, squid3, squid4, squid5, squid6]}
             />
+          </ProductDiv>
+          <ProductDiv>
+            <ProductHeader>
+              <FontAwesomeIcon icon={faCheckSquare} size="4x" color="#42b4e4" />
+              <div>
+                <h2>Whelk</h2>
+                <h3>Buccinum Undatum</h3>
+              </div>
+            </ProductHeader>
+            <ProductContent>
+              <p>Fishing Area:</p>
+              <p>Gulf Zone 3, 4, 5</p>
+              <p>Season:</p>
+              <p>May - October</p>
+              <p>Size:</p>
+              <div>
+                <p>{`SS: < 9 g`}</p>
+                <p>S: 10 g - 17 g</p>
+                <p>M: 18 g - 24 g</p>
+                <p>L: 25 g +</p>
+              </div>
+              <p>Packing:</p>
+              <div>
+                <p>Boiled frozen meat</p>
+                <p>2 kg block box X 10 = 20 kg box</p>
+              </div>
+            </ProductContent>
+            <ProductImages imgs={[whelk1, whelk2, whelk3, whelk4]} />
           </ProductDiv>
           <ProductDiv>
             <ProductHeader>
@@ -333,6 +383,7 @@ export default ({ data }) => {
                 <p>15 kg box</p>
               </div>
             </ProductContent>
+            <ProductImages imgs={[sole1, sole2, sole3, sole4]} />
           </ProductDiv>
           <ProductDiv>
             <ProductHeader>
@@ -359,6 +410,7 @@ export default ({ data }) => {
               <p>Packing:</p>
               <p>10 kg box and 15 kg box</p>
             </ProductContent>
+            <ProductImages imgs={[herring1, herring2, herring3]} />
           </ProductDiv>
           <ProductDiv>
             <ProductHeader>
@@ -430,6 +482,13 @@ export const pageQuery = graphql`
         }
       }
     }
+    crab7: file(relativePath: { eq: "crab7.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     capelin1: file(relativePath: { eq: "capelin1.png" }) {
       childImageSharp {
         fluid {
@@ -493,6 +552,13 @@ export const pageQuery = graphql`
         }
       }
     }
+    lobster6: file(relativePath: { eq: "lobster6.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     squid1: file(relativePath: { eq: "squid1.png" }) {
       childImageSharp {
         fluid {
@@ -529,6 +595,83 @@ export const pageQuery = graphql`
       }
     }
     squid6: file(relativePath: { eq: "squid6.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    whelk1: file(relativePath: { eq: "whelk1.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    whelk2: file(relativePath: { eq: "whelk2.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    whelk3: file(relativePath: { eq: "whelk3.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    whelk4: file(relativePath: { eq: "whelk4.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    sole1: file(relativePath: { eq: "sole1.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    sole2: file(relativePath: { eq: "sole2.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    sole3: file(relativePath: { eq: "sole3.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    sole4: file(relativePath: { eq: "sole4.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    herring1: file(relativePath: { eq: "herring1.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    herring2: file(relativePath: { eq: "herring2.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    herring3: file(relativePath: { eq: "herring3.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

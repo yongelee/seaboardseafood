@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 import Header from "./header";
 import Footer from "./footer";
 import styled from "styled-components";
-import bglarge from "../images/bglarge.jpg";
+import bg1 from "../images/bg1.png";
 import favicon from "../images/fav.jpg";
 
 import "normalize.css";
@@ -17,7 +17,7 @@ const Container = styled.div`
   flex-direction: column;
 `;
 const ImageBg = styled.div`
-  background-image: url(${bglarge});
+  background-image: url(${bg1});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

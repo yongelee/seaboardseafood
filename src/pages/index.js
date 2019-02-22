@@ -115,7 +115,12 @@ export default ({ data }) => {
     sole4,
     herring1,
     herring2,
-    herring3
+    herring3,
+    redfish1,
+    redfish2,
+    redfish3,
+    redfish4,
+    redfish5
   } = data;
   return (
     <Layout>
@@ -310,6 +315,7 @@ export default ({ data }) => {
                 <p>10 kg box,</p>
               </div>
             </ProductContent>
+            <ProductImages imgs={[redfish1, redfish2, redfish3, redfish4, redfish5]} />
           </ProductDiv>
           <ProductDiv>
             <ProductHeader>
@@ -672,6 +678,41 @@ export const pageQuery = graphql`
       }
     }
     herring3: file(relativePath: { eq: "herring3.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    redfish1: file(relativePath: { eq: "redfish1.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    redfish2: file(relativePath: { eq: "redfish2.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    redfish3: file(relativePath: { eq: "redfish3.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    redfish4: file(relativePath: { eq: "redfish4.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    redfish5: file(relativePath: { eq: "redfish5.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
